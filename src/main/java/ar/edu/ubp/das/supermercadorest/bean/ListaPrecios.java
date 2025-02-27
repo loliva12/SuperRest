@@ -5,9 +5,11 @@ import java.math.BigDecimal;
 public class ListaPrecios {
     private String cod_barra;
     private String nom_producto;
-    private BigDecimal precio;
+    private String precio;
     private String nomCategoria;
     private String nro_sucursal;
+    private String cod_barra_prod_sustituto;
+
 
     public String getCod_barra() {
         return cod_barra;
@@ -25,11 +27,11 @@ public class ListaPrecios {
         this.nom_producto = nom_producto;
     }
 
-    public BigDecimal getPrecio() {
+    public String getPrecio() {
         return precio;
     }
 
-    public void setPrecio(BigDecimal precio) {
+    public void setPrecio(String precio) {
         this.precio = precio;
     }
 
@@ -47,5 +49,13 @@ public class ListaPrecios {
 
     public void setNro_sucursal(String nro_sucursal) {
         this.nro_sucursal = nro_sucursal;
+    }
+
+    public String getCod_barra_prod_sustituto() {
+        return cod_barra_prod_sustituto;
+    }
+
+    public void setCod_barra_prod_sustituto(String cod_barra_prod_sustituto) {
+        this.cod_barra_prod_sustituto = cod_barra_prod_sustituto;
     }
 }
